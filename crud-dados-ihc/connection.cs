@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace crud_dados_ihc
 {
-    class connection
+    class Connection
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand cd = new SqlCommand();
@@ -18,8 +18,7 @@ namespace crud_dados_ihc
 
         public void Connect()
         {
-            cn.ConnectionString = "SERVER = DESKTOP-GM7EVH8\\SQLEXPRESS; Database=Estoque; UID=sa; PWD=1234;";
-            //cn.ConnectionString = "SERVER = F038847\\SQLEXPRESS; Database=Estoque2; UID=sa; PWD=123;";
+            cn.ConnectionString = "SERVER = DESKTOP-GM7EVH8\\SQLEXPRESS; Database=Perguntas; UID=sa; PWD=1234;";
             cn.Open();
         }
 
