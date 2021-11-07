@@ -28,6 +28,8 @@ namespace crud_dados_ihc
             data.PerguntaD = txtPerguntaD.Text;
             data.Resultado = int.Parse(cbResposta.Text);
             data.Update();
+            MessageBox.Show("Registro alterado com sucesso");
+            cbCategoria_SelectedIndexChanged(sender, e);
         }
 
         private void cbPerguntaId_SelectedIndexChanged(object sender, EventArgs e)

@@ -23,6 +23,8 @@ namespace crud_dados_ihc
         {
             data.IdPergunta = int.Parse(cbPerguntaId.SelectedValue.ToString());
             data.Delete();
+            MessageBox.Show("Registro excluido com sucesso");
+            cbCategoria_SelectedIndexChanged(sender, e);
         }
 
         private void frmExcluir_Load(object sender, EventArgs e)
